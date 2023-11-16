@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         Yancko_AWS_ACCESS_KEY_ID = credentials ('yancko-acces')
-        Yancko-AWS_SECRET_ACCESS_KEY = credentials ('yancko-secret')
+        Yancko_AWS_SECRET_ACCESS_KEY = credentials('yancko-secret').secret
         AWS_DEFAULT_REGION = "us-east-2"
     }
     stages {
