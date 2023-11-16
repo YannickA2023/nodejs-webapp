@@ -1,13 +1,10 @@
 pipeline {
     agent any
 
-    parameters {
-    choice choices: ['apply', 'destroy'], description: 'Please enter your option or action', name: 'action'
-     }
 
     environment {
-        AWS_ACCESS_KEY_ID = credentials('yanick-access')
-        AWS_SECRET_ACCESS_KEY = credentials('yanick-secret')
+        YANNICK-AWS_ACCESS_KEY_ID = credentials('yanick-access')
+        YANNICK-AWS_SECRET_ACCESS_KEY = credentials('yanick-secret')
         AWS_DEFAULT_REGION = "us-east-2"
     }
     stages {
